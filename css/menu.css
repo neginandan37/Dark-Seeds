@@ -8,6 +8,9 @@
 .sec-mr-top{
     margin-top:100px;
 }
+.sec-mr-bottom{
+    margin-bottom: 60px;
+}
 header{
     border-top: 5px solid #c9d8c5;
     background-color: #edd9c0;
@@ -113,7 +116,7 @@ header label {
 }
 }
 main .main-img-box{
-    background-image: url(../img/dark-seeds.jpg);
+    background-image: url(../img/menu-coffe.jpg);
     width: 100%;
     height: 350px;
     background-size: cover;
@@ -134,12 +137,14 @@ main .main-img-box h1{
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
+    font-family: 'Oswald', sans-serif;
 }
 main .main-img-box p{
     color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
+    letter-spacing: 1px;
 }
 .list-items .main-title h2{
     font-size: 45px;
@@ -179,6 +184,9 @@ main .main-img-box p{
     font-weight: 300;
     color: #401706;
 }
+.list-items .type-coffe p{
+    font-family: 'Oswald', sans-serif;
+}
 .discount-bnr{
     background-color: #f3f3f3;
 }
@@ -189,11 +197,14 @@ main .main-img-box p{
     line-height: 0.2;
     margin-bottom: 0;
     color: #636363; 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 .discount-bnr .title h2{
     font-size: 55px;
     font-weight: 700;
     color: #636363;
+    font-family: 'Oswald', sans-serif;
 }
 .discount-bnr .title p{
     color: #636363; 
