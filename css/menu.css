@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:500,600,700,800|Oswald:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700&display=swap');
 *,body{
-    font-family: 'Maven Pro','Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -11,11 +11,44 @@
 .sec-mr-bottom{
     margin-bottom: 60px;
 }
+ .main-title h2{
+    font-size: 45px;
+    color: #401706; 
+    text-align: center;
+    font-weight: 600;
+}
+ .main-title p{
+    margin-top: 15px;
+    text-align: center;
+    color: #401706;
+    font-size: 16px;
+    padding: 0 28%;
+}
+.main-title .subtitle{
+    color: #a7753a;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.subtitle:before {
+    content: '';
+    width: 100px;
+    position: relative;
+    display: inline-block;
+    height: 1px;
+    background-color: #a7753a;
+    margin-right: 10px;
+    vertical-align: middle;
+    top: -1px;
+}
 header{
     border-top: 5px solid #c9d8c5;
     background-color: #edd9c0;
     padding: 5px 0;
     height: 80px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 header .logo{
     padding: 10px ;
@@ -42,13 +75,16 @@ header .navbar-box nav ul {
     margin-bottom: 0;
     padding-left: 0;
 }
+header .navbar-box nav ul li{
+    margin: 0px 15px;
+ }
 header .navbar-box nav ul li a{
     font-size: 16px;
     text-transform: uppercase;
     color: #401706; 
-    padding: 10px 20px;
+    padding: 5px 5px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 400;
     transition: all 300ms ease-in-out 0s;
 }
 header .navbar-box nav ul li a:hover{
@@ -58,7 +94,7 @@ header .navbar-box nav ul li a:hover{
 header .store_location a{
     color: #401706; 
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     margin-left: 40px;
     padding:10px;
@@ -85,18 +121,15 @@ header .store_location a:hover{
       justify-content: center;
       position: fixed;
       width:100%;
-      height: 100vh;
+      height: 230px;
       top: 80px;
       left: -100vw;
-      text-align: center;
       transition: all 0.5s;
       background-color:#2c3e50 ;
+      border-bottom: 10px solid #edd9c0;
   }
- header .navbar-box nav ul{
-    display: block;
- }
  header .navbar-box nav ul li{
-    margin: 20px 0;
+    margin-bottom: 20px;
  }
   header .navbar-box nav ul li a{
       color: #fff;
@@ -115,8 +148,13 @@ header label {
     margin-bottom: 0px;
 }
 }
+@media (max-width: 575px){
+    header .navbar-box nav ul li{
+        margin: 0px 10px;
+     }
+  }
 main .main-img-box{
-    background-image: url(../img/menu-coffe.jpg);
+    background-image: url(../img/menu-coffee.jpg);
     width: 100%;
     height: 350px;
     background-size: cover;
@@ -127,91 +165,53 @@ main .main-img-box{
 main .main-img-box .overlay{
     height: 100%;
     width: 100%;
-    background: rgb(0, 0, 0, 0.5);
+    background: rgb(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
 }
 main .main-img-box h1{
-    font-size: calc(45px + 1vw);
+    font-size: calc(50px + 1vw);
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    font-family: 'Oswald', sans-serif;
 }
 main .main-img-box p{
     color: #fff;
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
-    letter-spacing: 1px;
-}
-.list-items .main-title h2{
-    font-size: 45px;
-    color: #401706; 
-    text-align: center;
-    font-weight: 600;
-    font-family: 'Oswald', sans-serif;
-}
-.list-items .main-title .subtitle{
-    color: #a7753a;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    position: relative;
-    display: block;
-    text-align: center;
-}
-.list-items .main-title .subtitle:before {
-    content: '';
-    width: 100px;
-    position: relative;
-    display: inline-block;
-    height: 1px;
-    background-color: #a7753a;
-    margin-right: 10px;
-    vertical-align: middle;
-    top: -1px;
-}
-.list-items .main-title p{
-    margin-top: 15px;
-    text-align: center;
-    color: #401706;
+    padding: 0 28%;
 }
 .list-items .details-item{
-    font-size: 24px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 400;
     color: #401706;
 }
-.list-items .type-coffe p{
-    font-family: 'Oswald', sans-serif;
-}
 .discount-bnr{
-    background-color: #f3f3f3;
+    background-color: #c9d8c5;
+    padding: 60px 0;
 }
 .discount-bnr .title{
-    padding: 100px 0;
+    padding-top: 20px;
 }
 .discount-bnr .title h6{
     line-height: 0.2;
     margin-bottom: 0;
     color: #636363; 
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
 .discount-bnr .title h2{
     font-size: 55px;
     font-weight: 700;
-    color: #636363;
-    font-family: 'Oswald', sans-serif;
+    color: #401706;
 }
 .discount-bnr .title p{
     color: #636363; 
 }
 .discount-bnr .title  a {
     color: #401706;
-    padding: 8px 20px;
+    padding: 8px 22px;
     border: 1px solid #484848;
     display: inline-block;
     margin-top: 20px;
@@ -220,13 +220,46 @@ main .main-img-box p{
 .discount-bnr .title  a:hover {
     text-decoration: none;
     background-color: #a7753a;
-    color: #fff;
 }
 .discount-bnr img {
    width: 100%;
 
 }
-
+/*-----------------connect section---------------------*/
+.rounded-box1 {
+	background-image: url(../img/coffee-special1.jpg);
+}
+.rounded-box2 {
+	background-image: url(../img/coffee-special2.jpg);
+}
+.rounded-box3 {
+	background-image: url(../img/coffee-special3.jpg);
+}
+.rounded-box1, .rounded-box2, .rounded-box3 {
+	width: 260px;
+	height: 260px;
+	background-size: cover;
+	background-position: center;
+	border: 8px solid #edd9c0;
+	margin: 0 auto 20px;
+	cursor: pointer;
+	transition: all 300ms ease-in-out 0s;
+}
+.rounded-box1:hover, .rounded-box2:hover, .rounded-box3:hover {
+	transform: scale(1.02) translate(0px, -8px);
+	box-shadow: 0px 0px 12px 5px #eee;
+}
+.rounded-boxes h3 {
+	font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #401706;
+}
+.rounded-boxes p {
+    padding: 0 12%;
+    text-align: center;
+    color: #401706;
+}
 
 /*-- responsive design --*/
 @media (max-width: 1199px){
@@ -235,8 +268,22 @@ main .main-img-box p{
     }
   }
 @media (max-width: 991px){
-    
+    main .main-img-box p{
+        padding: 0 18%;
+    }
+    .main-title p{
+        padding: 0 18%;
+    }
+    .discount-bnr .title h2 {
+        font-size: 40px;
+    }
 }
 @media (max-width: 767px){
-    
+    main .main-img-box p{
+        padding: 0 0;
+    }
+    .main-title p{
+        padding: 0 0;
+    }
   }
+  
